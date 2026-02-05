@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Dashboard para gestión de productos de frutería: inventario, entradas, salidas y caducidad" />
+    <title>Frutería Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+    <header role="banner">
+      <h1 id="site-title">Frutería Dashboard</h1>
+      <nav aria-label="Menú principal">
+        <ul class="nav-list" role="menubar">
+          <li role="none"><button id="nav-dashboard" role="menuitem" aria-current="page">Dashboard</button></li>
+          <li role="none"><button id="nav-products" role="menuitem">Productos</button></li>
+          <li role="none"><button id="nav-entries" role="menuitem">Entradas</button></li>
+          <li role="none"><button id="nav-exits" role="menuitem">Salidas</button></li>
+          <li role="none"><button id="nav-caducidad" role="menuitem">Caducidad</button></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="toast" class="toast" role="alert" aria-live="polite" aria-atomic="true"></div>
+    <main id="main-content" class="main-content" tabindex="-1">
+      <div id="app" aria-live="polite" aria-busy="false">
+        <!-- Las vistas se inyectan aquí -->
+      </div>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
